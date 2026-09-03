@@ -1,1 +1,36 @@
--
+[package]
+name = "everycrypt_rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7", features = ["multipart"] }
+tokio = { version = "1", features = ["full"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors", "trace"] }
+
+wry = "0.40"
+tao = "0.28"
+webbrowser = "0.8"
+
+argon2 = "0.5"
+chacha20poly1305 = "0.10"
+hkdf = "0.12"
+sha2 = "0.10"
+hmac = "0.12"
+rand = "0.8"
+base64 = "0.21"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+hex = "0.4"
+zeroize = "1.6"
+
+mime_guess = "2.0"
+dirs = "5.0"
+image = { version = "0.24", optional = true }
+
+env_logger = "0.10"
+clap = { version = "4.0", features = ["derive"] }
+chrono = "0.4"
+anyhow = "1.0"
+thiserror = "1.0"
